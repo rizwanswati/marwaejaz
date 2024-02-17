@@ -1,13 +1,21 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/memafetd/public_html  # Specify the deployment path
-    - command: |
-        git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git checkout -f
-        # Clear cache and temporary files if necessary (commands might vary based on your OpenCart version)
-        rm -rf $DEPLOYPATH/system/cache/*
-        rm -rf $DEPLOYPATH/system/storage/cache/*
-        rm -rf $DEPLOYPATH/image/cache/*
-        # Set permissions for OpenCart directories (replace 755 and 644 with appropriate permissions)
-        find $DEPLOYPATH -type d -exec chmod 755 {} \;
-        find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - export DEPLOYPATH=/home/memafetd/public_html/ # Specify the deployment path
+    - /bin/cp -R admin $DEPLOYPATH
+    - /bin/cp -R catalog $DEPLOYPATH
+    - /bin/cp -R extension $DEPLOYPATH
+    - /bin/cp -R image $DEPLOYPATH
+    - /bin/cp -R install $DEPLOYPATH
+    - /bin/cp -R system $DEPLOYPATH
+
+    # copy all the files
+    - /bin/cp htaccess.txt $DEPLOYPATH
+    - /bin/cp config.php $DEPLOYPATH
+    - /bin/cp cron.php $DEPLOYPATH
+    - /bin/cp error.html $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp install.lock $DEPLOYPATH
+    - /bin/cp LICENSE $DEPLOYPATH
+    - /bin/cp php.ini $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
