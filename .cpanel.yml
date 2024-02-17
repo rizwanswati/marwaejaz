@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/memafetd/public_html  # Specify the deployment path
+    - export DEPLOYPATH=/home/memafetd/public_html  # Specify the deployment path
     - command: |
         git --work-tree=$DEPLOYPATH --git-dir=$DEPLOYPATH/.git checkout -f
         # Clear cache and temporary files if necessary (commands might vary based on your OpenCart version)
