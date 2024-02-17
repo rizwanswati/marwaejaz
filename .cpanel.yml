@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/memafetd/public_html
+    - /bin/cp -R --exclude=".git" --exclude=".idea" * $DEPLOYPATH
