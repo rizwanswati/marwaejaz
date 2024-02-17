@@ -1,16 +1,18 @@
 <?php
 // APPLICATION
-define('APPLICATION', 'Catalog');
+define('APPLICATION', 'Admin');
 
 //// HTTP
-//define('HTTP_SERVER', 'http://localhost/marwaejaz/');
+//define('HTTP_SERVER', 'http://localhost/marwaejaz/me_admin/');
+//define('HTTP_CATALOG', 'http://localhost/marwaejaz/');
 //
 //// DIR
 //define('DIR_OPENCART', 'C:/xampp/htdocs/marwaejaz/');
-//define('DIR_APPLICATION', DIR_OPENCART . 'catalog/');
+//define('DIR_APPLICATION', DIR_OPENCART . 'me_admin/');
 //define('DIR_EXTENSION', DIR_OPENCART . 'extension/');
 //define('DIR_IMAGE', DIR_OPENCART . 'image/');
 //define('DIR_SYSTEM', DIR_OPENCART . 'system/');
+//define('DIR_CATALOG', DIR_OPENCART . 'catalog/');
 //define('DIR_STORAGE', 'C:/xampp/storage/');
 //define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 //define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
@@ -32,16 +34,21 @@ define('APPLICATION', 'Catalog');
 //define('DB_DATABASE', 'memafetd_main_db');
 //define('DB_PORT', '3306');
 //define('DB_PREFIX', '');
+//
+//// OpenCart API
+//define('OPENCART_SERVER', 'https://www.opencart.com/');
 
 // HTTP
-define('HTTP_SERVER', 'https://marwaejaz.pk/');
+define('HTTP_SERVER', 'https://marwaejaz.pk/me_admin/');
+define('HTTP_CATALOG', 'https://marwaejaz.pk/');
 
 // DIR
 define('DIR_OPENCART', '/home/memafetd/public_html/');
-define('DIR_APPLICATION', DIR_OPENCART . 'catalog/');
+define('DIR_APPLICATION', DIR_OPENCART . 'me_admin/');
 define('DIR_EXTENSION', DIR_OPENCART . 'extension/');
 define('DIR_IMAGE', DIR_OPENCART . 'image/');
 define('DIR_SYSTEM', DIR_OPENCART . 'system/');
+define('DIR_CATALOG', DIR_OPENCART . 'catalog/');
 define('DIR_STORAGE', '/home/memafetd/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
@@ -63,3 +70,6 @@ define('DB_SSL_CA', '');
 define('DB_DATABASE', 'memafetd_main_db');
 define('DB_PORT', '3306');
 define('DB_PREFIX', '');
+
+// OpenCart API
+define('OPENCART_SERVER', 'https://www.opencart.com/');
