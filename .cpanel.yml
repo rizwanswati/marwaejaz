@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/memafetd/public_html/ # Specify the deployment path
+    - export DEPLOYPATH=/home/memafetd/public_html # Specify the deployment path
     - /bin/cp -R admin $DEPLOYPATH
     - /bin/cp -R catalog $DEPLOYPATH
     - /bin/cp -R extension $DEPLOYPATH
