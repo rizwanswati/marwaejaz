@@ -3,18 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/memafetd/public_html/ # Specify the deployment path
     - /bin/cp -R * $DEPLOYPATH
-#    - /bin/cp htaccess.txt $DEPLOYPATH
-#    - /bin/cp config.php $DEPLOYPATH
-#    - /bin/cp cron.php $DEPLOYPATH
-#    - /bin/cp error.html $DEPLOYPATH
-#    - /bin/cp index.php $DEPLOYPATH
-#    - /bin/cp install.lock $DEPLOYPATH
-#    - /bin/cp LICENSE $DEPLOYPATH
-#    - /bin/cp php.ini $DEPLOYPATH
-#    - /bin/cp robots.txt $DEPLOYPATH
-#    #    - /bin/cp -R admin $DEPLOYPATH
-#    #    - /bin/cp -R catalog $DEPLOYPATH
-#    #    - /bin/cp -R extension $DEPLOYPATH
-#    #    - /bin/cp -R image $DEPLOYPATH
-#    #    - /bin/cp -R install $DEPLOYPATH
-#    #    - /bin/cp -R system $DEPLOYPATH
